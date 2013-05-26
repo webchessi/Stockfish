@@ -173,11 +173,9 @@ namespace {
   // based on how many squares inside this area are safe and available for
   // friendly minor pieces.
   const Bitboard SpaceMask[] = {
-	(1ULL << SQ_C1) | (1ULL << SQ_D1) | (1ULL << SQ_E1) | (1ULL << SQ_F1) |
     (1ULL << SQ_C2) | (1ULL << SQ_D2) | (1ULL << SQ_E2) | (1ULL << SQ_F2) |
     (1ULL << SQ_C3) | (1ULL << SQ_D3) | (1ULL << SQ_E3) | (1ULL << SQ_F3) |
     (1ULL << SQ_C4) | (1ULL << SQ_D4) | (1ULL << SQ_E4) | (1ULL << SQ_F4),
-    (1ULL << SQ_C8) | (1ULL << SQ_D8) | (1ULL << SQ_E8) | (1ULL << SQ_F8) |
     (1ULL << SQ_C7) | (1ULL << SQ_D7) | (1ULL << SQ_E7) | (1ULL << SQ_F7) |
     (1ULL << SQ_C6) | (1ULL << SQ_D6) | (1ULL << SQ_E6) | (1ULL << SQ_F6) |
     (1ULL << SQ_C5) | (1ULL << SQ_D5) | (1ULL << SQ_E5) | (1ULL << SQ_F5)

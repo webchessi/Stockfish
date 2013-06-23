@@ -833,7 +833,8 @@ split_point_start: // At split points actual search starts from here
       // Step 12. Extend checks and, in PV nodes, also dangerous moves
       if (PvNode && dangerous)
           ext = ONE_PLY;
-
+	  else if (PvNode && type_of(move) == PROMOTION && givesCheck)
+		   ext = ONE_PLY ;
       else if (givesCheck && pos.see_sign(move) >= 0)
           ext = ONE_PLY / 2;
 
